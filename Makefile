@@ -1,7 +1,12 @@
 SHELL = bash
 
 BUILD_INFO = $(shell server/gen_build_info.sh base64)
-BUILD_FLAG = -ldflags="-X github.com/root-gg/plik/server/common.buildInfoString=$(BUILD_INFO) -w -s -extldflags=-static"
+#BUILD_FLAG = -ldflags="-X github.com/root-gg/plik/server/common.buildInfoString=$(BUILD_INFO) -w -s -extldflags=-static"
+ifeq ($(shell uname),Darwin)
+    BUILD_FLAG = -ldflags="-X github.com/root-gg/plik/server/common.buildInfoString=$(BUILD_INFO) -w -s"
+else
+    BUILD_FLAG = -ldflags="-X github.com/root-gg/plik/server/common.buildInfoString=$(BUILD_INFO) -w -s -extldflags=-static"
+endif
 BUILD_TAGS = -tags osusergo,netgo,sqlite_omit_load_extension
 
 GO_BUILD = go build $(BUILD_FLAG) $(BUILD_TAGS)
