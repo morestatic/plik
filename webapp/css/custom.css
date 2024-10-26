@@ -2,16 +2,18 @@
 
 Example to customize the title/menu/footer font
 
+*/
+
 @font-face {
-    font-family: 'Kode Mono';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/kodemono/v1/A2BLn5pb0QgtVEPFnlYkkaoBgw4qv9odq5myxDOZadW2.woff2) format('woff2');
-    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    /* src: url(https://fonts.gstatic.com/s/kodemono/v1/A2BLn5pb0QgtVEPFnlYkkaoBgw4qv9odq5myxDOZadW2.woff2) format('woff2'); */
+    /* unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; */
 }
 
 @font-face {
-    font-family: 'Kode Mono';
+    font-family: 'Arial';
     font-style: normal;
     font-weight: 400;
     src: url(https://fonts.gstatic.com/s/kodemono/v1/A2BLn5pb0QgtVEPFnlYkkaoBgw4qv9odq5myxD2ZaQ.woff2) format('woff2');
@@ -19,9 +21,40 @@ Example to customize the title/menu/footer font
 }
 
 header {
-    font-family: 'Kode Mono', sans-serif; !important;
+    /* font-family: 'Arial', sans-serif; !important; */
 }
 
 footer {
-    font-family: 'Kode Mono', sans-serif; !important;
-}*/
+    /* font-family: 'Arial', sans-serif; !important; */
+}
+
+body {
+    background: #2d6588 url(../img/vlcsnap-00015.png) no-repeat fixed center center !important;
+    background-size: cover !important;
+    font-family: Arial, serif !important;
+}
+
+header {
+    font-family: Arial, serif !important;
+}
+
+footer {
+    font-family: Arial, serif !important;
+}
+
+header a:hover, header a:visited, header a:link, header a:active {
+    color: #9E9E9E !important;
+}
+
+.btn {
+    border-radius: 8px !important;
+}
+
+.btn-primary {
+    background-color: green !important;
+    border-color: green !important;
+}
+
+.tile {
+    border-radius: 5px !important;
+}
