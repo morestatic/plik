@@ -41,7 +41,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #666;
-    background: #2d6588 url(../img/background.jpg) no-repeat fixed center center;
+    /* background: #2d6588 url(../img/background.jpg) no-repeat fixed center center; */
     background-size: cover;
 }
 
