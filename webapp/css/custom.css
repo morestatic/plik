@@ -7,21 +7,22 @@ Example to customize the title/menu/footer font
 body {
     /* background: #2d6588 url(../img/vlcsnap-00015.png) no-repeat fixed center center !important; */
     background-size: cover !important;
-    font-family: Spectral, Arial, serif !important;
-    font-size: 20px;
+    font-family: Courier, Arial, serif !important;
+    font-size: 16px;
+    background-color: #66afe9 !important;
 }
 
 header {
-    font-family: Spectral, Arial, serif !important;
+    font-family: Courier, Arial, serif !important;
 }
 
 footer {
-    font-family: Spectral, Arial, serif !important;
+    font-family: Courier, Arial, serif !important;
 }
 
-header a:hover, header a:visited, header a:link, header a:active {
-    color: #9E9E9E !important;
-}
+/*header a:hover, header a:visited, header a:link, header a:active {*/
+/*    color: #9E9E9E !important;*/
+/*}*/
 
 .btn {
     border-radius: 8px !important;

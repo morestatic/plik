@@ -22,3 +22,6 @@ plikd_*.cfg
 .idea
 plik.iml
 coverage.out
+
+.vscode
+.DS_Store
